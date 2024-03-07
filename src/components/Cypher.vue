@@ -42,10 +42,10 @@ export default {
   },
   methods: {
     encrypt() {
-      this.output = encrypt(this.input);
+      this.output = encrypt(this.input, this.offset);
     },
     decrypt() {
-      this.output = decrypt(this.input);
+      this.output = decrypt(this.input, this.offset);
     },
   },
 };
